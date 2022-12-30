@@ -1,0 +1,884 @@
+<!-- class58-browser_styles_and_CSS_reset-cipherschools -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS reset</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        /* css reset is used to remove all the margins and paddings which are set by browser by default so that we can do our own customisations */
+    </style>
+</head>
+<body>
+    <h1>this is the biggest heading</h1>
+    <div class="container1">
+        <h2>this is the second largest heading</h2>
+        <p>this is a paragraph</p>
+    </div>
+</body>
+
+</html>
+
+
+
+<!-- class59-inheritance-cipherschools -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inheritance</title>
+    <style>
+        body{
+            color: gray;
+        }
+        .container1{
+            color: blueviolet;
+        }
+        .container2{
+            color: blue;
+        }
+        a{
+            color: rgb(25, 100, 25);
+        }
+    </style>
+</head>
+<body>
+    <a href="#">My website</a>
+    <h1>Main heading inside body</h1>
+    <div class="container1">
+        <h2>this is a normal heading</h2>
+        <p>this is a paragraph</p>
+    </div>
+    <div class="container2">
+        <h2>this is a normal heading</h2>
+        <p>this is a paragraph</p>
+    </div>
+</body>
+</html>
+
+
+
+<!-- class60-text_align-cipherschools -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>text align property</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+        body{
+            font-family: poppins;
+        }
+        h1 {
+            width: 400px;
+            background-color: aliceblue;
+            text-align: center;
+        }
+
+        a {
+            display: inline-block;
+            background-color: coral;
+            width: 300px;
+            text-align: center;
+            border-radius: 3px;
+            text-decoration: none;
+            color: #444;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>heading</h1>
+    <a href="#">"My Website"</a>
+</body>
+
+</html>
+
+
+
+<!-- class61-CSS_font_weight-cipherschools -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS font weight</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+        h1{
+            font-weight: 700;
+            font-family: poppins;
+        }
+        p{
+            font-family: poppins;
+            font-weight: 400;
+
+        }
+    </style>
+</head>
+<body>
+    <h1>heading</h1>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat, recusandae!</p>
+</body>
+</html>
+
+
+<!-- class62-text_related_properties-cipherschools -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text related properties</title>
+    <style>
+        h1{
+            font-size: 46px;
+            text-decoration: wavy solid red;
+            text-decoration: overline solid red;
+            text-decoration: line-through solid red;
+            text-decoration: underline solid red;
+            letter-spacing: 4px;
+        }
+        p{
+            font-size: 20px;
+            line-height: 30px;
+            word-spacing: 5px;
+
+        }
+    </style>
+</head>
+<body>
+    <h1>heading</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum iure quaerat accusamus odio officia assumenda quod doloribus porro exercitationem deserunt temporibus, soluta et ratione, eius nihil ad dolores recusandae maiores modi non! Iste rerum quae dolorem sapiente iure. Sed necessitatibus blanditiis temporibus quasi tempora odit culpa inventore, laborum ea ullam, dicta minima exercitationem. Deleniti labore ipsam molestias nostrum corrupti praesentium consectetur alias consequuntur facere optio odit assumenda nobis qui dolorem incidunt earum quisquam amet adipisci nesciunt, voluptatum impedit modi cupiditate! Eum, maiores? Itaque sequi adipisci modi aliquam laborum vero excepturi unde, velit minima enim dolorem, est omnis reiciendis consequatur repellat?</p>
+</body>
+</html>
+
+
+
+<!-- class63-pseudo_classes-cipherschools -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>psuedo classes </title>
+    <!-- pseudo classes are used to define special state of an element -->
+    <!-- in this one you'll learn 4 pseudo classes which are link, visited, hover, active -->
+    <style>
+        /* use pseudo classes in this order link, visited, hover, active (LVHA) */
+        a{
+            font-size: large;
+            text-decoration: none;
+        }
+        a:link{
+            color: brown;
+        }
+        a:visited{
+            color: blue;
+        }
+        a:hover{
+            color: red;
+        }
+        a:active{
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <a href="https://www.youtube.com">Youtube.com</a>
+    <a href="https://www.youtube.in">Youtube.in</a>
+    <a href=""></a>
+</body>
+</html>
+
+
+<!-- class64-pseudo_classes_2-cipherschools -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pseudo classes 2</title>
+    <style>
+        input:focus{
+        padding: 4px;
+            outline: none;
+            border: 2px solid green;
+        }
+        input:required{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <form action="">
+        <input type="email" placeholder="Enter your Email" required><br><br>
+        <input type="password" placeholder="Enter your password"><br><br>
+        <input type="submit" placeholder="Sign-In">
+    </form>
+</body>
+</html> 
+
+
+
+<!-- class65-first_child_&_first_of_type_pseudo_class-cipherschools -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS | First child & first of type Pseudo Class</title>
+    <style>
+        p:first-child{
+            color: blue;
+        }
+        p:first-of-type{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h3>headingyo</h3>
+        <p>shit</p>
+        <p>what</p>
+        <p>the</p>
+    </header>
+    <p>direct child of body</p>
+    <p>me too direct child of body</p>
+    <div class="container">
+        <p>para of container</p>
+        <p>para of container</p>
+        <p>para of container</p>
+        <h3>piece of shit inside container</h3>
+    </div>
+</body>
+</html>
+
+
+
+<!-- class66-last_child_&_last_of_type_pseudo_class-cipherschools -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS | Last child & Last of type pseudo class</title>
+    <style>
+        p:last-child{
+            color: blue;
+        }
+        p:last-of-type{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h3>headingyo</h3>
+        <p>shit</p>
+        <p>what</p>
+        <p>the</p>
+    </header>
+    <p>direct child of body</p>
+    <p>me too direct child of body</p>
+    <div class="container">
+        <p>para of container</p>
+        <p>para of container</p>
+        <p>para of container</p>
+        <h3>piece of shit inside container</h3>
+    </div>
+</body>
+</html>
+
+
+
+<!-- class67-nth_child_&_nth_of_type-cipherschools -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS | nth child & nth of type pseudo class</title>
+    <style>
+        p:nth-child(2n){
+            color: red;
+        }
+        p:nth-of-type(2n+1){
+            color: blue;
+        }
+        body{
+            background-color: black;
+            color: white;
+        }
+        ul li:nth-child(2n){
+            color: lightgreen;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li>item</li>
+        <li>item</li>
+        <li>item</li>
+        <li>item</li>
+        <li>item</li>
+        <li>item</li>
+        <li>item</li>
+        <li>item</li>
+        <li>item</li>
+        <li>item</li>
+    </ul>
+    <header>
+        <h3>headingyo</h3>
+        <p>shit</p>
+        <p>what</p>
+        <p>the</p>
+    </header>
+    <p>direct child of body</p>
+    <p>me too direct child of body</p>
+    <div class="container">
+        <p>para of container</p>
+        <p>para of container</p>
+        <p>para of container</p>
+        <h3>piece of shit inside container</h3>
+    </div>
+</body>
+</html>
+
+
+<!-- class68-root_not_empty_pseudo_classes-cipherschools -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>:root :not & :empty pseudo classes</title>
+    <style>
+        body{
+            background-color: black;
+            color: white;
+        }
+        body :not(p){
+            color: red;
+        }
+        div:empty{
+            background-color: #222;
+            height: 50px;
+            width: 100px;
+            border: 2px solid #333;
+        }
+        :root{
+            background-color: darkred; /*this is same as html{} but the only difference it is highly specific when compared to this one.*/
+        }
+    </style>
+</head>
+<body>
+    <h1>Heading</h1>
+    <p class="fancy">this is fanccy</p>
+    <div></div>
+</body>
+</html>
+
+
+
+<!-- class69-firstLetter_firstWord_selection_pseudo_elements-cipherschools -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pseudo elements</title> 
+    <!-- these are used to style a particular part of an element -->
+    <!-- first-letter and first-line pseudo elements work for block line elements only -->
+    <style>
+        p::first-letter{
+            font-size: 20px;
+        }
+        /* p::first-line{
+            font-size: 20px;
+        } */
+        p::selection{
+            background-color: gray;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h1>Heading</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A perferendis fugit quaerat eaque qui velit vel adipisci.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A perferendis fugit quaerat eaque qui velit vel adipisci.</p>
+</body>
+</html>
+
+
+
+<!-- class70-before&after_pseudo_elements-cipherschools -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>before and after pseudo elements</title>
+    <style>
+        .cool::before{
+            content: "hello ";
+            display: block;
+            color: green;
+            border: 1px dotted black;
+            margin-top: 5px;
+            padding: 5px;
+        }
+        .cool::after{
+            content: "hello ";
+            display: block;
+            color: green;
+            border: 1px dotted black;
+            margin-top: 5px;
+            padding: 5px;
+        }
+        .main-heading::before{
+            content: "hello ";
+            color: red;
+        }
+        /* you cannot use before and after pseudo elements for img, br, input, etc. */
+    </style>
+</head>
+<body>
+    <p class="cool">this is para</p>
+    <h1 class="main-heading">this is heading</h1>
+</body>
+</html>
+
+
+
+<!-- class71-important_fundamentals-cipherschools -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Chivo+Mono&family=Montserrat:wght@400;700&display=swap');
+
+        body {
+            font-family: 'chivo mono';
+        }
+
+        p {
+            font-size: large;
+        }
+    </style>
+</head>
+
+<body>
+    <img src="https://source.unsplash.com/random/?hacking/300x300" alt="crypto" />
+    <p>
+        The video didn't play so coding was not possible
+    </p>
+</body>
+
+</html>
+
+
+
+<!-- class73-CSS_absolute_units-cipherschools -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Absolute Units</title>
+    <style>
+        p{
+            font-size: 32px;
+            /* 1 inch = 96px */
+            /* 1 inch = 2.54cm */
+            /* 1px == 0.75pt */
+            /* 16px = 12pt */
+        }
+    </style>
+</head>
+<body>
+    <p>The goal is not to be "not wrong" the goal is to be "less wrong"</p>
+</body>
+</html>
+
+
+<!-- class74-understand_%-cipherschools -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>% in CSS</title>
+    <style>
+        div{
+            border: 2px solid red;
+            font-size: 10px;
+            width: 50%;
+        }
+        p{
+            border: 1px solid green;
+            width: 50%;
+            background: lightblue;
+            font-size: 200%;/*percentages are calculated wrt parent here parent fsize is 10px so 200% of it would be 20px*/
+            margin: 10px auto;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <p>Hello there</p>
+
+    </div>
+</body>
+</html>
+
+
+
+<!-- class75-understand_rem-cipherschools -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>rem</title>
+    <style>
+        html{
+            font-size: 10px;
+            font-size: 62.5%;
+        }
+        .box1{
+            font-size: 2rem /*size wrt root element*/;
+        }
+        .textContent{
+            font-size: 3rem;
+            border: 1rem solid red;
+            margin: 0.5rem;
+            padding: 4.5rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="box1">
+        <p class="textContent">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor inventore iste a in nesciunt vel deserunt obcaecati soluta provident id aliquam animi repudiandae nam illum, quis, exercitationem iusto deleniti quidem rerum, quaerat quasi doloremque labore.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, optio, obcaecati accusantium officia autem sequi quae sunt, laudantium deleniti expedita sed magni! Voluptate eveniet, quibusdam consectetur quos ipsam labore reiciendis.</p>
+    </div>
+</body>
+</html>
+
+
+
+<!-- class76-understand_em-cipherschools -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>em</title>
+    <style>
+        h1{
+            font-size: 2em /*1em = 16px and this might vary because this calculation is done based on font-size of the parent element*/;
+        }
+        .box{
+            font-size: 20px;
+        }
+        .box p{
+            font-size: 2em;
+            border: 2em solid black;/*now here the value of 2em will be 80px because apart from font-size whereever you use this em it takes the font-size of that element itself as basevalue and calculates the value according to it so here the font-size of the element is 40px so border is 2em so 2*40 = 80 that's how it works*/
+        }
+    </style>
+</head>
+<body>
+    <h1>this is main heading</h1>
+    <div class="box">
+        <h1>this is inside a shithole</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio incidunt dolores iste minima ipsa illum voluptatibus corporis laboriosam dicta omnis culpa libero placeat nemo ea, laudantium voluptates velit voluptatem fuga obcaecati. Optio at molestiae saepe? Minima necessitatibus a animi, nam atque magni, ex cumque impedit, veritatis repellat tempora! Repellendus deleniti ut ea illo! Tenetur, quam?</p>
+    </div>
+</body>
+</html>
+
+
+<!-- class77-emVsremVspx-cipherschools -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>em vs rem vs</title>
+    <style>
+        /* for font-size prefer rem it is useful for making your website responsive */
+        /* for margin and padding prefer em */
+        :root{
+            font-size: 62.5%;
+        }
+        h1{
+            font-size: 5rem;
+            border: 2px solid #222;
+            padding: 2em;
+        }
+        p{
+            font-size: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="box1">
+        <h1>heading</h1>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Neque, dolores delectus nemo animi sequi commodi voluptas libero? Laudantium doloribus error eum quos culpa accusantium cupiditate nam quo! Alias fugit molestiae cumque ullam sunt perferendis nobis ad libero, obcaecati possimus nisi. Quia dolores harum a possimus hic qui atque et, vitae laudantium minima nisi deserunt numquam voluptatem aspernatur quos animi assumenda at ea non nam molestias cum quisquam. Numquam tenetur, quia fugit nostrum provident consequuntur impedit beatae rem perferendis excepturi quas alias ipsam iste hic magnam eum, adipisci corporis, magni fuga amet velit expedita! In sunt magni delectus, nesciunt accusantium inventore!</p>
+    </div>
+</body>
+</html>
+
+
+
+<!-- class78-vh_vw-cipherschools -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>viewport units</title>
+    <style>
+        .box{
+            background-color: cadetblue;
+            height: 100vmin;
+        }
+        h1{
+            border: 2px solid green;
+            width: 50vw /*percentage cares about the parent element but vh and vw don't give a fuck about the parent element all their dimensions are set according to the dimensions of device*/;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <h1>Inside box</h1>
+    </div>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore neque temporibus cum saepe recusandae et delectus consequuntur est alias soluta quibusdam voluptatum qui culpa totam quia, in asperiores placeat optio incidunt veritatis repellendus esse magni debitis repudiandae. Non cum maxime error facere, pariatur minima porro ratione, nesciunt, accusamus doloremque repellat nobis inventore. Provident beatae obcaecati, delectus dignissimos at, incidunt aliquid aut adipisci asperiores et inventore? Ea saepe dolor perspiciatis quibusdam est soluta tempore aliquam, vitae animi odit laboriosam ducimus enim dolorum corrupti possimus quidem pariatur hic. Explicabo sunt provident maxime deleniti aliquid, eveniet beatae placeat iure minima! Totam corrupti unde, voluptatum sunt consequatur magni ratione saepe officia hic ipsa consequuntur molestiae accusamus dicta omnis cumque sit quasi fuga recusandae odit quidem accusantium deserunt! Dignissimos obcaecati aut doloremque officia veniam et, quaerat error facilis expedita, aspernatur ut architecto similique id voluptatum commodi. Eaque consectetur fugit ab voluptas perspiciatis tenetur corrupti hic, officiis eligendi ex aut dolores odio, pariatur, neque eum ea nam quaerat magnam error tempore. Nemo voluptate iusto eos accusamus quod architecto, corrupti minima pariatur ad modi molestiae aliquam maxime excepturi, vel ipsam veritatis animi labore quis nostrum! Iusto itaque quasi illum ipsum ea quidem sapiente, reprehenderit, quas corrupti tenetur illo adipisci nesciunt pariatur fuga, excepturi in aliquam fugit repellendus quam doloribus quibusdam omnis ullam. Cum voluptate vero, ipsa incidunt ab dignissimos nostrum saepe dicta illo soluta placeat provident odit voluptatem cupiditate ducimus laborum adipisci cumque repellat laudantium nisi perspiciatis natus aut alias quas. Quia excepturi sint voluptatem dicta debitis magnam consequuntur libero. Quas debitis similique voluptas nulla, possimus a alias laborum repellat incidunt dolorum fugiat exercitationem error nesciunt, atque dolor autem eius eligendi excepturi mollitia! Enim quisquam quis quaerat possimus! Magni maiores alias architecto eos aspernatur tenetur enim hic veniam porro corrupti expedita pariatur iure nam modi repellat, dolorem iste, ut doloribus repudiandae id. Eveniet esse eum qui, molestias pariatur dolorem perferendis officia! Dignissimos quis voluptate delectus laborum, deserunt deleniti harum illum eum obcaecati maiores sapiente molestiae optio qui. Esse molestias est rem nemo nam suscipit ducimus, voluptatem eligendi error perferendis reprehenderit id dolor nostrum perspiciatis! Cumque, at libero? Consequatur, cumque? Quia soluta sit dicta sapiente hic cupiditate neque? A mollitia, incidunt illo aliquam quia veniam sapiente iusto velit tenetur laborum eius dolore expedita id, amet perspiciatis rem ut maiores neque eos, reiciendis dolor! Assumenda pariatur vitae sequi molestiae qui id repellat harum itaque, vel cumque officia minus aliquid ullam debitis, temporibus facilis architecto deleniti aperiam expedita. Voluptates dicta molestiae quibusdam dolorem natus? Eum neque provident architecto a natus officiis rerum voluptatem. Animi neque rerum, nulla placeat, facilis molestiae ipsa dolor explicabo cupiditate esse dignissimos fuga vero nobis alias impedit illum rem accusamus. Excepturi assumenda ut ad unde sit saepe fugit laboriosam nemo natus facere sed, eos, eveniet ex doloribus quod repellat! Eveniet, adipisci ab illum at nihil autem accusamus est, accusantium illo pariatur, sit molestiae. Sunt sapiente dolorem minus aut quibusdam alias voluptate doloremque? Ad laudantium quaerat, ipsa sit impedit quam quae, doloremque ex iusto officia molestiae? Adipisci!</p>
+</body>
+</html>
+
+
+<!-- class79-CSS_floats-cipherschools -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS floats</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="favMusicians">
+        <div class="AlanWalker">
+            <h2>About Alan Walker</h2>
+            <p>I'm Faded.....</p>
+            <p>I'm Faded.....</p>
+            <p>I'm Faded.....</p>
+            <p>I'm Faded.....</p>
+            <p>I'm Faded.....</p>
+            <p>I'm Faded.....</p>
+            <p>I'm Faded.....</p>
+            <p>I'm Faded.....</p>
+            <p>I'm Faded.....</p>
+            <p>I'm Faded.....</p>
+            <p>I'm Faded.....</p>
+        </div>
+        <div class="JamesHorner">
+            <h2>About James Horner</h2>
+            <p>my heart will go on</p>
+            <p>my heart will go on</p>
+            <p>my heart will go on</p>
+            <p>my heart will go on</p>
+            <p>my heart will go on</p>
+            <p>my heart will go on</p>
+            <p>my heart will go on</p>
+            <p>my heart will go on</p>
+            <p>my heart will go on</p>
+            <p>my heart will go on</p>
+            <p>my heart will go on</p>
+
+        </div>
+        <div class="JamesHorner1">
+            <h2>About James Horner</h2>
+            <p>my heart will go on</p>
+            <p>my heart will go on</p>
+            <p>my heart will go on</p>
+            <p>my heart will go on</p>
+            <p>my heart will go on</p>
+            <p>my heart will go on</p>
+            <p>my heart will go on</p>
+            <p>my heart will go on</p>
+            <p>my heart will go on</p>
+            <p>my heart will go on</p>
+            <p>my heart will go on</p>
+
+        </div>
+        <div class="JamesHorner2">
+            <h2>About James Horner</h2>
+            <p>my heart will go on</p>
+            <p>my heart will go on</p>
+            <p>my heart will go on</p>
+            <p>my heart will go on</p>
+            <p>my heart will go on</p>
+            <p>my heart will go on</p>
+            <p>my heart will go on</p>
+            <p>my heart will go on</p>
+            <p>my heart will go on</p>
+            <p>my heart will go on</p>
+            <p>my heart will go on</p>
+
+        </div>
+
+        <!-- <div class="clearfix">
+
+        </div> 1st method the second method is in style page -->
+    </div>
+    <div class="box">
+        <h2>heading</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui iusto consectetur suscipit omnis minus
+            distinctio sunt aperiam nulla expedita quo. Quasi natus ut corporis, explicabo officia aspernatur alias
+            aliquid dolor vel ipsa perferendis? Ullam omnis possimus eius explicabo perspiciatis aperiam. Modi
+            laboriosam sed dignissimos dicta ut suscipit id eos aliquam.</p>
+    </div>
+</body>
+
+</html>
+
+
+<!-- class80-static_relative_absolute-cipherschools.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Positions | Static, Relative, Absolute, Fixed, Sticky, Z-index</title>
+    <style>
+        body{
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        .container{
+            width: 800px;
+            border: 8px solid green;
+            position: relative;
+            margin: 50px 0px;
+        }
+        .container h1{
+            border: 4px solid red;
+            background-color: lightyellow;
+            /* position: relative; */
+            /* position: absolute;/*the element will be out of the document flow*/
+            /* top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%); */
+            /* top: 25px; */
+            right: 20px;
+            left: 20px;
+            bottom: 20px;
+            z-index: -1; 
+        }
+        .container h3{
+            background-color: black;
+            color: #fff;
+            /* position: fixed;
+            top: 0; */
+            position: sticky;
+            top: 0;
+        }
+        .container p{
+            border: 4px solid violet;
+            background-color: lightgray;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>hey there!</h1>
+        <h3>I'm the best</h3>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias facere quo nobis sint rerum atque incidunt labore, iste sit amet aspernatur a! Nisi reprehenderit ut beatae, earum quia doloribus autem amet blanditiis, veritatis odit quis nulla quos in eius nobis laudantium unde ipsum dolor?</p>
+    </div>
+    <div class="box">
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Asperiores eaque amet corporis accusantium! Obcaecati, fugiat. Odio in blanditiis animi inventore accusantium. Voluptates voluptate iure tempora ratione amet earum, sunt aut est error ab at necessitatibus corrupti natus labore pariatur quia accusamus in asperiores sit! Voluptatem cum itaque ut cupiditate eum libero placeat, id iusto perferendis consectetur accusantium omnis est incidunt distinctio nulla eos labore laudantium neque veniam. Incidunt quaerat totam iure, ratione sed a illo distinctio ea ullam qui iusto perspiciatis soluta pariatur provident vero quis impedit tempora, repudiandae et neque, ipsa quia animi necessitatibus excepturi. Enim, vero? Possimus reiciendis laboriosam minus placeat in ut voluptatum fugit quo consequuntur? Velit quod ullam illum officiis omnis? Voluptatum illo, labore enim saepe vel consectetur culpa expedita incidunt earum commodi quas aut harum iusto, est recusandae. Similique in earum minima, rerum odio quas nisi iusto corporis quo ducimus facere repudiandae eveniet dolores, veniam maxime ad. Iste impedit quis reiciendis optio. Illo, atque. Optio amet voluptates distinctio vero dicta animi non odit cumque qui quaerat velit commodi veniam ducimus facere, nam sequi tempora consequuntur excepturi hic fugit eveniet maxime! Asperiores officiis dolorem quos minima error atque, perferendis quidem. Consequuntur tempora molestias quis repudiandae fugiat neque vitae pariatur temporibus, placeat sunt, voluptatum debitis, itaque ea deserunt doloribus velit et consectetur quam quae reprehenderit. Aliquid cum amet nemo. Atque mollitia repellat dolorem? Molestiae reiciendis nostrum, fuga esse repellendus omnis nulla voluptate architecto magni reprehenderit accusamus quia harum vel aliquid numquam asperiores, fugit eius nesciunt incidunt expedita. Culpa tenetur accusamus earum dolorem officia hic, dolor totam eveniet odit incidunt laborum, sint quae vitae. Fuga, doloribus officia quos mollitia qui quis amet unde, veritatis expedita vero tenetur. Temporibus ullam dolorem, labore optio vitae blanditiis id! Reprehenderit quidem blanditiis nesciunt incidunt, libero ipsa minima soluta amet consectetur esse doloremque quasi eum tempore voluptate sint cupiditate ipsum. Necessitatibus repellat ipsam nisi voluptatum, voluptatem ratione vero ut consectetur saepe, quis ipsum doloribus iste eveniet architecto numquam, adipisci rerum qui et nesciunt quasi officiis? Rem soluta provident ab dignissimos suscipit quis eligendi labore assumenda accusamus quia explicabo debitis at consequuntur sapiente quidem natus quasi possimus ea, ut minus, laboriosam eos nam, dolores vel! Placeat eaque velit magni a consectetur voluptate doloremque repudiandae incidunt sequi sapiente non, libero optio sed facilis deleniti perspiciatis odit magnam asperiores. Ea cum ipsum similique, amet esse facilis voluptatum eaque nobis exercitationem, inventore laboriosam asperiores magni alias ipsa quasi modi? Architecto ratione veniam nam tenetur, dignissimos similique animi exercitationem unde repudiandae at, ipsam quidem perspiciatis, excepturi dolore autem beatae quia eum! Optio tempora doloremque perferendis, quos quaerat dignissimos eos, ipsam rerum magni, praesentium dolore ea. Laboriosam totam maiores expedita laudantium earum accusamus alias! Temporibus, neque, recusandae ducimus maiores fugiat accusantium delectus aliquam eum perspiciatis molestiae voluptas, nulla quasi laboriosam sunt dignissimos sed natus? Natus non veniam, nobis qui voluptatem, laudantium aliquam dicta esse libero enim minima nisi quidem, cum necessitatibus! Expedita quasi est explicabo odio, sed necessitatibus, pariatur reiciendis, nesciunt voluptates tempore commodi nostrum suscipit provident facere voluptate officia facilis obcaecati? Error repellendus adipisci obcaecati! Nisi ipsam nihil eum atque commodi perspiciatis repellat, ad tempore sequi ea. Dolore exercitationem blanditiis cum mollitia, suscipit nobis autem dicta minus ad beatae! Et, optio, neque natus, quas eligendi aliquid quam odio nulla laboriosam veritatis adipisci. Similique praesentium nulla dolor maxime voluptatem, aperiam ipsa ipsam iste nesciunt minus earum, voluptatum suscipit blanditiis aliquid deserunt aliquam veniam error dolorum. Iure dolore quisquam obcaecati doloremque cum, officiis quod molestiae debitis omnis voluptates sequi. Neque, perspiciatis adipisci. Tempora tempore ab eius! Fugiat id deleniti eius earum consequatur quasi soluta iste alias, obcaecati velit? Quod dolor quos odio praesentium asperiores debitis ut explicabo at neque, voluptatibus facilis assumenda tempore accusantium voluptatem in reiciendis fugiat illo iste commodi fuga! Natus, exercitationem et ratione possimus quod commodi reprehenderit molestiae, reiciendis molestias ex impedit voluptatibus facere esse harum pariatur! Iusto rerum beatae aspernatur error porro voluptatibus ipsam blanditiis voluptate eaque, facilis, deleniti iste, sapiente cupiditate suscipit numquam alias distinctio fuga saepe odit! Nulla impedit sed sint fugiat temporibus iste, exercitationem quia omnis veniam esse enim repudiandae ab aperiam, architecto rem! Rem doloremque ullam consequuntur, assumenda nihil, eum eveniet nemo provident reiciendis repellendus voluptatum facilis deserunt, dolorem ipsum. Dicta autem quibusdam quidem? Iure officiis voluptate voluptates dolore omnis voluptatem facilis aliquam quasi dignissimos porro? Inventore ipsam nemo doloribus animi dolores odio unde, non ut culpa tenetur quibusdam, enim sint fugiat autem! Eaque ipsum qui fugiat soluta harum, explicabo doloribus, repellendus incidunt sunt beatae aliquid facilis rem aut, minus sapiente dolor. Vero odio cupiditate ipsum laudantium quasi illum, laboriosam sunt cumque distinctio iste reprehenderit voluptas debitis, quam veniam, deleniti dolor! Fuga sapiente in iure ex libero saepe illum harum consectetur sequi recusandae deleniti doloribus, atque, possimus accusamus. Nihil quasi perferendis modi atque assumenda delectus, facilis, obcaecati quia possimus hic sit repellat molestiae odio ea quo sint facere. Est cupiditate sapiente a officia. Odio perspiciatis blanditiis sed eveniet, in alias aspernatur harum quisquam? Neque earum, atque amet id voluptatem doloribus placeat quisquam accusamus voluptate maxime culpa accusantium, odit ex eaque voluptatibus impedit repellat necessitatibus exercitationem. Expedita fugiat eveniet voluptate vero dignissimos iusto tenetur perferendis aspernatur architecto provident natus inventore laboriosam, praesentium labore quos animi ex ipsum eaque quasi exercitationem sapiente officiis. Ducimus odit, quidem ipsa accusamus rerum quo consectetur perferendis, deleniti dignissimos, dolorem asperiores eligendi repellendus. Minima ex culpa eaque tenetur corporis fugit itaque, sapiente non tempore ullam alias maxime quibusdam a facere iste pariatur obcaecati recusandae asperiores voluptatem magnam laudantium. Mollitia dolores qui doloremque sit nulla at a, odio commodi, corporis temporibus iusto voluptatem harum vel laudantium. Nostrum, laboriosam reiciendis! Alias provident porro harum nesciunt nam aut accusamus veniam numquam sint et corrupti atque quasi veritatis nostrum repellat itaque, doloribus magni quis quidem delectus ad reprehenderit? Nihil inventore impedit sit aspernatur id vel ab esse labore ipsa adipisci tenetur dolorum commodi, autem modi! Modi ipsam nemo fugit quas accusamus nisi laboriosam repudiandae impedit hic. Necessitatibus omnis deserunt quis nisi praesentium dolore molestiae eius? Blanditiis repellat quibusdam autem odio iure libero facilis.</p>
+    </div>
+</body>
+</html>
+
+
+
+
+<!-- class81-project_bgimg-cipherschools -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WanderLust</title>
+    <link rel="stylesheet" href="css/project.css">
+</head>
+<body>
+    <header class="header">
+        
+    </header>
+</body>
+</html>
